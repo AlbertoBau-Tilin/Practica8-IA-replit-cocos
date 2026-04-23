@@ -1,0 +1,43 @@
+Crea una aplicación web (SPA) profesional y minimalista para el negocio "Coco's Life (Sucursal Plaza México)". El diseño debe ser orgánico, fresco y moderno, utilizando una paleta de colores basada en el coco (blancos crema, verdes hoja de palma y marrones suaves).
+
+Información del Negocio:
+Nombre: Coco's Life (Sucursal Plaza México).
+
+Descripción: Especialistas en productos de coco 100% naturales y orgánicos (agua, pulpa, aceite, leche y mantequilla).
+
+Ubicación: Av. México 3300, Col. Monraz, C.P. 44670 Guadalajara, Jal. (Plaza México, frente a Suburbia por dentro de la plaza).
+
+Contacto: 33 2179 5262.
+
+Requisitos Técnicos y de Diseño:
+Tecnologías: Utiliza React, Vite y Tailwind CSS.
+
+Responsividad Extrema: La interfaz debe ser perfecta tanto en navegadores de escritorio como en dispositivos móviles de gama alta, específicamente optimizada para la resolución y pantalla del iPhone 17 Pro Max.
+
+Secciones de la Web:
+
+Hero: Una bienvenida visual impactante con imágenes de cocos frescos.
+
+Catálogo: Muestrario de productos (Agua de coco, Pulpa, Aceite, Leche, Mantequilla) con fotos y descripciones breves.
+
+Servicios: Destacar la venta en sucursal y el servicio a domicilio con un botón de pedido directo a WhatsApp (usando el número 3321795262).
+
+Contacto y Ubicación: Integrar un mapa (o enlace a Google Maps) que especifique la ubicación exacta en Plaza México frente a Suburbia.
+
+Interactividad: Añade animaciones suaves de entrada al hacer scroll (puedes usar Framer Motion o AOS).
+
+Instrucción de Configuración Crítica:
+Al configurar el proyecto, crea siempre un archivo vercel.json en la raíz para asegurar el despliegue correcto de una SPA (Single Page Application) con Vite. El archivo debe tener exactamente esta configuración:
+
+JSON
+{
+  "framework": "vite",
+  "outputDirectory": "dist/public",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
+No esperes a que falle el deploy, inclúyelo desde el principio para evitar errores 404 al recargar rutas.
