@@ -19,9 +19,6 @@ export function Footer() {
             alt="Logo CUCEI"
             className="w-20 h-auto mx-auto mb-5 drop-shadow"
           />
-          <p className="uppercase tracking-[0.2em] text-[11px] text-background/50 mb-4">
-            Proyecto Académico
-          </p>
           <dl className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3 text-sm text-background/80">
             <div className="flex flex-col">
               <dt className="text-background/50 text-xs uppercase tracking-wider">Alumno</dt>
