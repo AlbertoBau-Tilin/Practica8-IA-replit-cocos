@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
-import aguaImg from "@/assets/agua-de-coco.png";
-import pulpaImg from "@/assets/pulpa-de-coco.png";
-import aceiteImg from "@/assets/aceite-de-coco.png";
-import lecheImg from "@/assets/leche-de-coco.png";
-import mantequillaImg from "@/assets/mantequilla-de-coco.png";
+import aguaImg from "@assets/agua-de-coco_1776985154984.jpg";
+import cocoBlandoImg from "@assets/coco-blando_1776985154983.jpg";
+import harinaImg from "@assets/harina-de-coco_1776985154981.jpg";
+import lecheImg from "@assets/leche-de-coco_1776985154984.jpg";
+import carneImg from "@assets/carne-de-coco_1776985154983.jpg";
+import azucarImg from "@assets/azucar-de-coco_1776985154982.jpg";
 
 const products = [
   {
@@ -12,14 +13,14 @@ const products = [
     image: aguaImg,
   },
   {
-    name: "Pulpa de Coco",
-    description: "Suave, tierna y llena de sabor. Perfecta para licuados o disfrutar sola.",
-    image: pulpaImg,
+    name: "Coco Blando",
+    description: "Tierno y fresco, listo para disfrutar. Una experiencia tropical en cada sorbo.",
+    image: cocoBlandoImg,
   },
   {
-    name: "Aceite de Coco",
-    description: "Prensado en frío, conserva todos sus nutrientes. Ideal para cocina y cuidado personal.",
-    image: aceiteImg,
+    name: "Harina de Coco",
+    description: "Orgánica, sin gluten y rica en fibra. Ideal para repostería saludable.",
+    image: harinaImg,
   },
   {
     name: "Leche de Coco",
@@ -27,10 +28,15 @@ const products = [
     image: lecheImg,
   },
   {
-    name: "Mantequilla de Coco",
-    description: "Pura crema de coco molida. Un untable rico, denso y naturalmente dulce.",
-    image: mantequillaImg,
-  }
+    name: "Carne de Coco",
+    description: "Servida con chile, limón y sal. El antojo perfecto, fresco y natural.",
+    image: carneImg,
+  },
+  {
+    name: "Azúcar de Coco",
+    description: "Endulzante orgánico de bajo índice glicémico. Sustituto saludable del azúcar refinada.",
+    image: azucarImg,
+  },
 ];
 
 export function Catalog() {
@@ -70,7 +76,7 @@ export function Catalog() {
               <img 
                 src={product.image} 
                 alt={product.name} 
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
               />
             </div>
             <div className="p-6 flex flex-col flex-grow">
