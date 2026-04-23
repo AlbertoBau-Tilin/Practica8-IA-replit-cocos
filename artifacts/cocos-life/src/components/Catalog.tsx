@@ -70,9 +70,9 @@ export function Catalog() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            className="group flex flex-col bg-card rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-border"
+            className="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-border"
           >
-            <div className="aspect-[4/5] overflow-hidden bg-secondary relative">
+            <div className="aspect-[4/5] overflow-hidden bg-white relative">
               <img 
                 src={product.image} 
                 alt={product.name} 
